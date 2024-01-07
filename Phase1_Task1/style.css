@@ -5,107 +5,109 @@
     box-sizing: border-box;
 }
 
- 
-
 .container {
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg, #4e0bba, #5f2f08);
-    padding: 10px; 
-
+    padding: 10px;
 }
 
 .todo-app {
     width: 100%;
-    max-width: 500px; 
+    max-width: 500px;
     background: #fff;
     margin: 100px auto 20px;
-   padding: 40px 30px 70px;
+    padding: 40px 30px 70px;
     border-radius: 10px;
-   
 }
 
-.todo-app h1{
+.todo-app h1 {
     color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
 }
-.todo-app h2 img{
-    width:30px;
+
+.todo-app h2 img {
+    width: 30px;
     margin-left: 10px;
 }
-.row{
+
+.row {
     display: flex;
-    align-items: centre;
+    align-items: center;
     justify-content: space-between;
-    background:#edeef0;
+    background: #edeef0;
     border-radius: 30px;
     padding-left: 20px;
     margin-top: 15px;
     margin-bottom: 25px;
 }
-input{
-    flex:1;
+
+input {
+    flex: 1;
     border: none;
     outline: none;
     background: transparent;
     padding: 10px;
-    font-weight: 14px;
+    font-size: 14px; /* Changed from font-weight to font-size */
 }
-button{
-    border:none;
-    outline:none;
-    padding:16px 50px ;
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
     background: #ed7f31;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
-
 }
-ul li{
+
+ul li {
     list-style: none;
-    font-size:17px;
-    padding:12px 8px 12px 50px;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
 }
-ul li::before{
-    content:' ';
-    position:absolute;
-    height:28px;
-    width:28px;
+
+ul li::before {
+    content: ' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
     border-radius: 50%;
     background-image: url(images/unchecked.png);
     background-size: cover;
-    background-position: centre;
+    background-position: center; /* Corrected typo in "centre" */
     top: 12px;
-    left:8px;
-
+    left: 8px;
 }
-ul li.completed{
+
+ul li.completed {
     color: #555;
     text-decoration: line-through;
-
 }
-ul li.completed::before{
+
+ul li.completed::before {
     background-image: url(images/checked.png);
 }
-ul li span{
-    position:absolute;
-    right:0;
-    top:5px;
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
     width: 40px;
     height: 40px;
-    font-size:22px;
-    color:rgb(88, 88, 85);
+    font-size: 22px;
+    color: rgb(88, 88, 85);
     line-height: 40px;
     text-align: center;
 }
-ul li span:hover{
-    background:lightgray;
+
+ul li span:hover {
+    background: lightgray;
     border-radius: 50px;
 }

@@ -1,5 +1,3 @@
-
-
 const Boxinput = document.getElementById("input-box");
 const listHolder = document.getElementById("list-containers");
 
@@ -25,14 +23,16 @@ listHolder.addEventListener('click', function (event) {
         event.target.classList.toggle("completed");
     } else if (event.target.tagName === "SPAN") {
         event.target.parentElement.remove();
+        captureData();
     }
 }, false);
 
 function captureData() {
     localStorage.setItem("entereddata", listHolder.innerHTML);
+}
 
-}
 function showMyTask() {
-    listHolder.innerHTML = localStorage.getItem("entereddata")
+    listHolder.innerHTML = localStorage.getItem("entereddata");
 }
+
 showMyTask();
