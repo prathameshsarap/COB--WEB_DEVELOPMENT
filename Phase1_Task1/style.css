@@ -50,7 +50,7 @@ input {
     outline: none;
     background: transparent;
     padding: 10px;
-    font-size: 14px; /* Changed from font-weight to font-size */
+    font-size: 14px;
 }
 
 button {
@@ -81,7 +81,7 @@ ul li::before {
     border-radius: 50%;
     background-image: url(images/unchecked.png);
     background-size: cover;
-    background-position: center; /* Corrected typo in "centre" */
+    background-position: center; 
     top: 12px;
     left: 8px;
 }
